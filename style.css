@@ -2,10 +2,14 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+.title{
+    font-weight: 800;
+}
 section {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    align-items: center;
+    padding: 15px 115px;
 }
 .app {
     display: flex;
@@ -14,8 +18,23 @@ section {
 }
 .card {
     margin: 10px 20px;
+    width: 250px;
 }
 .card-body{
     display: flex;
     justify-content: space-between;
+}
+@media (max-width: 576px){
+    section{
+        padding: 15px 40px;
+    }
+    .title{
+        font-size: 22px;
+    }
+    #search{
+        width: 160px;
+    }
+    .card{
+        width: 300px;
+    }
 }
